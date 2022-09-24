@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kan-Jonathan</title>
+      <link rel="stylesheet" href="./css/kan.css">
+</head>
+<body>
+
+      <!-- The navigationbar -->
+      <header>
+            <a href="#section" class="logo">Jonathan</a>
+            <ul>
+                  <li><a href=index.html>Home</a></li>
+                  <li><a href=wiebenik.html>Wie ben ik</a></li>
+                  <li><a href=watkanik.html class="active">Wat kan ik</a></li>
+                  <li><a href=watwilik.html>Wat wil ik</a></li>
+            </ul>
+      </header>
+
+      <!-- Background image and button -->
+      <section>
+            <img src="./images/jumpcliff.jpg" alt="" id="frontimg">
+            <h2 class="imagetext" id="text">Wat Kan Ik</h2>
+            <br>
+            <a href="#sec" id="btn">Meer</a>
+      </section>
+
+      <!-- Main paragraph / text part -->
+      <div class="sec" id="sec">
+            <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt ipsam tenetur numquam fuga harum, voluptatibus quis consectetur veritatis velit totam dolorum asperiores quia labore distinctio in adipisci sapiente soluta.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum cumque optio molestias et nemo ea unde similique, nobis temporibus est? Ab provident, amet dolorem reprehenderit assumenda repellendus quisquam doloribus esse.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sequi sapiente quibusdam ducimus exercitationem, explicabo ex voluptatem quis neque incidunt aliquid autem eligendi quas asperiores, tempora consequuntur delectus suscipit? Ducimus.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. In maxime beatae harum dolorum illo corrupti veniam quae dolorem quos. Distinctio fugit libero, adipisci accusantium molestiae voluptatum ratione velit commodi expedita?
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit quidem harum iure nesciunt impedit officiis nam illo reiciendis. Quaerat laborum expedita cumque aliquam at nisi ab earum voluptatum voluptates.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aut magnam quae corrupti veniam sit architecto doloremque sunt facilis fuga dolores consequatur vel voluptates, expedita, perferendis dicta iure quas animi.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad reprehenderit voluptatem dolor? Minima dolores incidunt aspernatur, hic labore sint autem culpa odit totam iure eius eveniet est tempore sit.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis eius fugit repudiandae itaque, omnis qui explicabo aliquid dolores? Error quas hic ullam, sapiente veritatis sunt praesentium? Reiciendis, libero sint!
+            </p>
+      </div>
+
+      <!-- Creates the scrolling effect -->
+      <script>
+            let imagetext = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let header = document.querySelector('header');
+            let img = document.getElementById('frontimg')
+
+
+            window.addEventListener('scroll', function(){
+                  let value = window.scrollY;
+                  imagetext.style.marginTop = value * 1.5 + 'px';
+                  btn.style.marginTop = value * 1.5 + 'px';
+                  header.style.top = value * 0.9 + 'px';
+            })
+</script>
+</body>
+</html>
